@@ -1,97 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jimenez Landscaping, LLC</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
-
-  <header class="bg-green-800 text-white px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Jimenez Landscaping, LLC</h1>
-    <nav class="space-x-4 font-semibold">
-      <a href="#home" class="hover:underline">Home</a>
-      <a href="#services" class="hover:underline">Services</a>
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#contact" class="hover:underline">Contact</a>
-    </nav>
-  </header>
-
-  <section id="home" class="bg-green-700 text-white py-20 text-center">
-    <h2 class="text-4xl font-extrabold mb-4">Professional Landscaping Services</h2>
-    <p class="text-lg mb-6">Family-owned business serving Lake County, FL since 2017</p>
-    <div class="flex justify-center gap-4 flex-wrap">
-      <a href="#contact" class="bg-green-400 hover:bg-green-500 text-white px-6 py-3 rounded-full font-semibold">Get Free Quote</a>
-      <a href="tel:3528018044" class="border border-white px-6 py-3 rounded-full font-semibold flex items-center gap-2">
-        <span>📞</span> (352) 801-8044
-      </a>
+<body class="bg-gray-100 text-gray-900">
+  <nav class="bg-green-900 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <span class="font-bold text-xl">Jimenez Landscaping</span>
+      <div class="space-x-4 hidden md:block">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
     </div>
+  </nav>
+
+  <section class="bg-green-700 text-white py-20 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold">Your Lawn, Our Passion</h1>
+    <p class="mt-4 text-lg">Family-owned & trusted in Lake County, Florida since 2017.</p>
   </section>
 
-  <section id="services" class="py-16 bg-white text-center">
-    <h3 class="text-3xl font-bold mb-10">Our Services</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🌿</div><h4 class="font-semibold text-xl mb-2">Landscape Design & Installation</h4><p>Custom design and installation to transform your outdoor space.</p></div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🌲</div><h4 class="font-semibold text-xl mb-2">Tree Trimming & Removal</h4><p>Professional trimming, pruning, and safe removal.</p></div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🪨</div><h4 class="font-semibold text-xl mb-2">Stonework</h4><p>Patios, walkways, and decorative hardscaping.</p></div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🍂</div><h4 class="font-semibold text-xl mb-2">Mulching</h4><p>Boost your garden’s health and appearance.</p></div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🧹</div><h4 class="font-semibold text-xl mb-2">Seasonal Cleanups</h4><p>Year-round property maintenance services.</p></div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow"><div class="text-4xl mb-3">🌴</div><h4 class="font-semibold text-xl mb-2">Palm Tree Services</h4><p>Specialized palm trimming and maintenance.</p></div>
-    </div>
-
-    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow mt-12 p-6 flex gap-4 items-start text-left">
-      <div class="text-3xl">🚫</div>
-      <div>
-        <h4 class="text-xl font-semibold text-green-800 mb-2">Why We Don’t Offer Mowing Services</h4>
-        <p class="text-gray-700">Jimenez Landscaping focuses on transformational landscaping, not short-term maintenance. Instead of weekly mowing, we offer long-term solutions that add beauty, value, and function to your outdoor space.</p>
+  <section id="services" class="p-10 bg-white">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-10">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        <strong>Landscape Design</strong><br>Tailored plans for beautiful results.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.75L6 9.75h12L14.25 3.75h-4.5zM4.5 12h15v1.5a3 3 0 01-3 3H7.5a3 3 0 01-3-3V12z"/></svg>
+        <strong>Installation</strong><br>Flawless execution of plantings and hardscape.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12H9m0 0v3m0-3v-3"/></svg>
+        <strong>Tree Trimming & Removal</strong><br>Careful cuts and clean removals.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg>
+        <strong>Stonework</strong><br>Elegant stone accents and pathways.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <strong>Mulching</strong><br>Fresh mulch to retain moisture and beauty.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+        <strong>Seasonal Cleanups</strong><br>Yard refreshes for any time of year.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12H9m0 0v3m0-3v-3"/></svg>
+        <strong>Trim Work</strong><br>Neat hedging and bush shaping.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v18"/></svg>
+        <strong>Pressure Washing</strong><br>Concrete, paver, and deck cleaning.
+      </div>
+      <div class="shadow p-6 bg-gray-50 rounded-lg">
+        <svg class="mx-auto w-8 h-8 text-green-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+        <strong>Sealing</strong><br>Protective sealing for your outdoor surfaces.
       </div>
     </div>
   </section>
 
-  <section id="about" class="py-16 bg-gray-50 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold mb-4">About Jimenez Landscaping</h3>
-      <p class="text-lg mb-6">Jimenez Landscaping, LLC is a family-owned landscaping company based in Leesburg, Florida. Founded in 2017 by Pedro Jimenez, we’re known for prompt service, fair pricing, and leaving properties better than we found them.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-green-800 font-semibold">
-        <div><div class="text-4xl">2017</div>Established</div>
-        <div><div class="text-4xl">100+</div>Happy Customers</div>
-        <div><div class="text-4xl">2</div>Languages (English & Spanish)</div>
-      </div>
-    </div>
+  <section id="about" class="bg-gray-100 p-10 text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-6">About Us</h2>
+    <p class="max-w-3xl mx-auto text-lg">
+      Jimenez Landscaping, LLC is a family-owned business based in Leesburg, Florida. We proudly serve Lake County, including The Villages, with honest work and fair pricing. Founded in 2017 by Pedro Jimenez, we specialize in full-service landscape care and enhancements that go the extra mile.
+    </p>
   </section>
 
-  <section id="contact" class="py-16 bg-white px-6">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold mb-6 text-center">Contact Us</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <p><strong>Address:</strong> 2311 Butler St, Leesburg, FL 34748</p>
-          <p><strong>Phone:</strong> (352) 801-8044</p>
-          <p><strong>Email:</strong> frodri6394@gmail.com</p>
-          <p><strong>Hours:</strong> Mon–Fri, 8:00 AM – 7:00 PM</p>
-        </div>
-        <form class="bg-gray-50 p-6 rounded shadow space-y-4">
-          <input class="w-full p-2 border rounded" placeholder="Your Name" required />
-          <input class="w-full p-2 border rounded" placeholder="Your Email" type="email" required />
-          <input class="w-full p-2 border rounded" placeholder="Your Phone Number" required />
-          <select class="w-full p-2 border rounded">
-            <option>Select a Service</option>
-            <option>Landscape Design</option>
-            <option>Tree Removal</option>
-            <option>Stonework</option>
-          </select>
-          <textarea class="w-full p-2 border rounded" placeholder="Tell us about your project..." rows="4"></textarea>
-          <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">Send Message</button>
-        </form>
-      </div>
-    </div>
+  <section id="contact" class="p-10 bg-white text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-6">Get In Touch</h2>
+    <p><strong>📍 Address:</strong> 2311 Butler St, Leesburg, FL 34748</p>
+    <p><strong>📞 Phone:</strong> <a href="tel:+13528018044" class="text-green-700 underline">(352) 801-8044</a></p>
+    <p><strong>📧 Email:</strong> <a href="mailto:frodri6394@gmail.com" class="text-green-700 underline">frodri6394@gmail.com</a></p>
+    <p><strong>🕒 Hours:</strong> Mon–Fri, 8:00 AM – 7:00 PM</p>
+    <p><strong>🌐 Languages:</strong> English & Spanish</p>
   </section>
 
-  <footer class="bg-gray-800 text-white text-center p-6">
+  <footer class="bg-green-900 text-white text-center p-6">
     <p>&copy; 2025 Jimenez Landscaping, LLC</p>
-    <p>Visit us at <strong>jimenezlandscaping.vercel.app</strong></p>
+    <p class="mt-2">Scan to visit our website:</p>
+    <div class="flex justify-center mt-4">
+      <img src="jimenez_landscaping_vercel_qr.png" alt="QR Code" class="w-32">
+    </div>
   </footer>
-
 </body>
 </html>
