@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Yard Visualizer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function changePreview(material) {
+      document.getElementById('preview').src = 'demo_' + material + '.jpg';
+    }
+    function previewUpload(event) {
+      const [file] = event.target.files;
+      if (file) {
+        document.getElementById('preview').src = URL.createObjectURL(file);
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4 text-center">AI Yard Visualizer (Demo)</h1>
+
+    <div class="mb-4">
+      <label class="block mb-2 font-semibold">Upload a Photo of Your Yard:</label>
+      <input type="file" accept="image/*" onchange="previewUpload(event)" class="block w-full text-sm text-gray-700 bg-white border border-gray-300 rounded-lg"/>
+    </div>
+
+    <div class="mb-4">
+      <img id="preview" src="demo_original.jpg" alt="Preview" class="w-full rounded-lg shadow-md">
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 text-center">
+      <button onclick="changePreview('sod')" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded">Sod</button>
+      <button onclick="changePreview('mulch')" class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">Mulch</button>
+      <button onclick="changePreview('gravel')" class="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded">Gravel</button>
+      <button onclick="changePreview('stone')" class="bg-yellow-700 hover:bg-yellow-800 text-white py-2 px-4 rounded">Stone</button>
+    </div>
+  </div>
+</body>
+</html>
